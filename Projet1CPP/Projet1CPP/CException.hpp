@@ -1,5 +1,5 @@
 #ifndef DEF_CEXCEPTION
-#define DEF_EXCEPTION
+#define DEF_CEXCEPTION
 
 //***********************************
 //**           CException          **

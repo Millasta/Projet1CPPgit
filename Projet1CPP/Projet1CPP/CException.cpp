@@ -41,7 +41,7 @@ CException::~CException() {}
 // Affiche l'id et la description de l'exception dans la sortie tandard de la console
 // sous la forme Exception id : description
 void CException::EXCAfficher() const {
-    std::cout << "CException " << iEXCId << " : " << sEXCDescription << std::endl;
+    std::cout << "CException : " << sEXCDescription << std::endl;
 }
 
 // Retourne l'id de l'exception

@@ -149,7 +149,7 @@
   <ItemGroup>
     <ClInclude Include="CException.hpp" />
     <ClInclude Include="CLecteurMatrice.hpp" />
-    <ClInclude Include="CMatrice.h" />
+    <ClInclude Include="CMatrice.hpp" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
