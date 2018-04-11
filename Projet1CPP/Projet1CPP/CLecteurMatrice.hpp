@@ -53,7 +53,6 @@ CMatrice<T>* CLecteurMatrice::LEClecture() {
 		}
 		std::string type = ligne.substr(ligne.find("<") + 1);
 		type = type.substr(0, type.length() - 1);
-		std::cout << "Type : " << type << std::endl;
 		if (type.compare("double") != 0)
 			throw CException(ERR_FICHIER, (char*)"Type invalide.");
 
@@ -66,7 +65,6 @@ CMatrice<T>* CLecteurMatrice::LEClecture() {
 				throw CException(1, (char*)"Erreur syntaxe.");
 		}
 		int nbLignes = stoi(ligne.substr(ligne.find("=") + 1), nullptr);
-		std::cout << "nbLignes : " << nbLignes << std::endl;
 		if (nbLignes < 0)
 			throw CException(ERR_FICHIER, (char*)"NBLignes invalide.");
 
@@ -79,7 +77,6 @@ CMatrice<T>* CLecteurMatrice::LEClecture() {
 				throw CException(1, (char*)"Erreur syntaxe.");
 		}
 		int nbColonnes = stoi(ligne.substr(ligne.find("=") + 1), nullptr);
-		std::cout << "nbColonnes : " << nbColonnes << std::endl;
 		if (nbLignes < 0)
 			throw CException(ERR_FICHIER, (char*)"NBColonnes invalide.");
 

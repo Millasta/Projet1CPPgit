@@ -102,7 +102,7 @@ template <typename T> void CMatrice<T>::MATdefinirValeur(const T tElement, const
 		pptMATelements[uiLigne][uiColonne] = tElement;
 	}
 	else {
-		throw CException(/*ERR_DIMENSION, "Dimension(s) non cohérente(s)."*/);
+		throw CException(ERR_DIMENSION, (char*)"Dimension(s) non cohérente(s).");
 	}
 }
 
@@ -111,7 +111,7 @@ template <typename T> T CMatrice<T>::MATlireValeur(const unsigned int uiLigne, c
 		return pptMATelements[uiLigne][uiColonne];
 	}
 	else {
-		throw CException(/*ERR_DIMENSION, "Dimension(s) non cohérente(s)."*/);
+		throw CException(ERR_DIMENSION, (char*)"Dimension(s) non cohérente(s).");
 	}
 }
 
@@ -160,7 +160,7 @@ template <typename T> CMatrice<T> CMatrice<T>::operator+(const CMatrice<T> &matO
 		return *matrix;
 	}
 	else {
-		throw CException(/*ERR_OPERATION, "Addition impossible : dimensions non cohérentes."*/);
+		throw CException(ERR_OPERATION, (char*)"Addition impossible : dimensions non cohérentes.");
 	}
 }
 
@@ -178,7 +178,7 @@ template <typename T> CMatrice<T> CMatrice<T>::operator-(const CMatrice<T> &matO
 		return *matrix;
 	}
 	else {
-		throw CException(/*ERR_OPERATION, "Soustraction impossible : dimensions non cohérentes."*/);
+		throw CException(ERR_OPERATION, (char*)"Soustraction impossible : dimensions non cohérentes.");
 	}
 }
 
@@ -203,7 +203,7 @@ template <typename T> CMatrice<T> CMatrice<T>::operator*(const CMatrice<T> &matO
 		return *matrix;
 	}
 	else {
-		throw CException(/*ERR_OPERATION, "Multiplication impossible : dimensions non cohérentes."*/);
+		throw CException(ERR_OPERATION, (char*)"Multiplication impossible : dimensions non cohérentes.");
 	}
 }
 
